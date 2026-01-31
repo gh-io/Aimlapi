@@ -3,6 +3,7 @@ index b8744327ff554fe6e4669c85978255c3fbc447f6..511b66a8b96b92d9994da4f650372b6e
 --- a/.gitlab/os-linux.yml
 +++ b/.gitlab/os-linux.yml
 @@ -597,6 +597,7 @@
+     
      variables:
          CMAKE_CONFIGURATION: hip6.3_nvidia
          CTEST_LABELS: "HIP"
@@ -30,3 +31,4 @@ index 2bc6bd2e963e69419e8d79c4b758d97887953b4d..de7c7ebbc80a07f7c7b6af28b25a0443
  
  if(all_archs_compiles AND all_major_archs_compiles AND native_archs_compiles)
    set(CMAKE_HIP_ARCHITECTURES all)
+
