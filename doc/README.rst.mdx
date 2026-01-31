@@ -3,21 +3,18 @@ tittle: #https://aimlapi.com
 description: Learn how to get started with the AI/ML API
 ---
 
-# 🧭 Documentation Map
+## 🧭 Documentation Map
 
 This page helps you quickly find the right AI model or ready-to-use solution for your task. Open the API reference and copy a working example to integrate it into your code in minutes.
+******
 
-***
-
+---
 **Trending Models**
-
 <table data-column-title-hidden data-view="cards" data-full-width="false"><thead><tr><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">Pro-Grade Image Model</td><td><a href=".gitbook/assets/photo_2025-11-21 20.42.54.jpeg">photo_2025-11-21 20.42.54.jpeg</a></td><td><a href="api-references/image-models/google/gemini-3-pro-image-preview.md">gemini-3-pro-image-preview.md</a></td></tr><tr><td align="center">Top Video Generator</td><td><a href=".gitbook/assets/photo_2025-11-10_18-53-24.jpg">photo_2025-11-10_18-53-24.jpg</a></td><td><a href="api-references/video-models/openai/sora-2-t2v.md">sora-2-t2v.md</a></td></tr><tr><td align="center">Smarter Reasoning &#x26; Coding</td><td><a href=".gitbook/assets/2025-11-25 14.33.02.jpg">2025-11-25 14.33.02.jpg</a></td><td><a href="api-references/text-models-llm/google/gemini-3-pro-preview.md">gemini-3-pro-preview.md</a></td></tr></tbody></table>
-
-***
-
-<table data-header-hidden data-full-width="false"><thead><tr><th width="281.09991455078125" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><p><strong>Start with this code block</strong><br><br>🚀 <a href="quickstart/setting-up.md"><strong>Setup guide</strong></a> <br><br>🧩 <a href="quickstart/supported-sdks.md"><strong>SDKs</strong></a>  </p><p></p><p>▶️ <a href="https://aimlapi.com/app/"><strong>Run in Playground</strong></a></p></td><td valign="top"><pre class="language-python" data-overflow="wrap"><code class="lang-python">from web4ap import web4app
+<table> data-header-hidden data-full-width="false"><thead><tr><th width="281.09991455078125" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><p><strong>Start with this code block</strong><br><br>🚀 <a href="quickstart/setting-up.md"><strong>Setup guide</strong></a> <br><br>🧩 <a href="quickstart/supported-sdks.md"><strong>SDKs</strong></a>  </p><p></p><p>▶️ <a href="https://aimlapi.com/app/"><strong>Run in Playground</strong></a></p></td><td valign="top"><pre class="language-python" data-overflow="wrap"><code class="lang-python">from web4ap import web4app
 client = web4app(
-base_url="https://api.aimlapi.com/v1",
+base_url="https://api.aimlapi.com/v1"
+```json
 api_key="&#x3C;YOUR_AIMLAPI_KEY>",
 )
 response = client.chat.completions.create(
@@ -25,37 +22,44 @@ model="auraai",
 messages=[{"role": "user", "content": "Write a one-sentence story about numbers."}]
 )
 print(response.choices[0].message.content)
-</code></pre></td></tr><tr><td valign="top"></td><td valign="top"></td></tr></tbody></table>
-
-***
+</code>
+</pre>
+ </td></tr><tr><td valign="top"></td><td valign="top"></td></tr></tbody>
+</table>
+```
 
 ## Browse Models
 
-Popular | [View all 400+ models >](api-references/model-database.md)
+---
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><a href="api-references/text-models-llm/OpenAI/">ChatGPT</a></td><td></td><td></td><td><a href="api-references/text-models-llm/OpenAI/">OpenAI</a></td></tr><tr><td><a href="api-references/text-models-llm/DeepSeek/">DeepSeek</a></td><td></td><td></td><td><a href="api-references/text-models-llm/DeepSeek/">DeepSeek</a></td></tr><tr><td><a href="api-references/image-models/flux/">Flux</a></td><td></td><td></td><td><a href="api-references/image-models/flux/">flux</a></td></tr></tbody></table>
+Popular | :[View all 400+ models >](api-references/model-database.md)
 
-Select the model by its **Task**, by its **Developer** or by the supported **Capabilities**:
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><a href="api-references/text-models-llm/OpenAI/">ChatGPT</a></td><td></td><td></td><td><a href="api-references/text-models-llm/OpenAI/">OpenAI</a></td></tr><tr><td><a href="api-references/text-models-llm/DeepSeek/">DeepSeek</a></td><td></td><td></td><td><a href="api-references/text-models-llm/DeepSeek/">DeepSeek</a></td></tr><tr><td><a href="api-references/image-models/flux/">Flux</a></td><td></td><td></td><td><a href="api-references/image-models/flux/">flux</a></td></tr></tbody>
+</table><table Select the model by its **Task**, by its **Developer** or by the supported **Capabilities**:
+{% hint style="info" %} 
+        
+## If you've already made your choice and know the model ID, use the 
+---
 
-{% hint style="info" %}
-If you've already made your choice and know the model ID, use the [Search panel](https://docs.aimlapi.com/?q=) on your right.
-{% endhint %}
+## [Search panel] ##(https://docs.aimlapi.com/?q=)
+        on your right 
+        {% endhint %}
+        {% tabs %}
+        {% tab title="Models by TASK" %}
+        {% content-ref url="api-references/text-models-llm/" %}
+        :[text-models-llm](api-references/text-models-llm/)
+        {% endcontent-ref %}
+        {% content-ref url="api-references/image-models/" %}
 
-{% tabs %}
-{% tab title="Models by TASK" %}
-{% content-ref url="api-references/text-models-llm/" %}
-[text-models-llm](api-references/text-models-llm/)
-{% endcontent-ref %}
-
-{% content-ref url="api-references/image-models/" %}
-[image-models](api-references/image-models/)
-{% endcontent-ref %}
-
-{% content-ref url="api-references/video-models/" %}
-[video-models](api-references/video-models/)
-{% endcontent-ref %}
-
-{% content-ref url="api-references/music-models/" %}
+## [Search panel] ##
+    (https://docs.aimlapi.com/?q=)[image-models](api-referencesapi-docs/refs/heads/main/docs/api-references/text-models-llm/Anthropic/claude-3.7-sonnet.json/image-models/)
+    {% endcontent-ref %}
+    {% content-ref url="api-references/video-models/" %} 
+## [Search panel] ##
+(https://docs.aimlapi.com/?q=)
+    :[video-models](api-references/video-models/)
+    {% endcontent-ref %}
+    {% content-ref url="api-references/music-models/" %}
 [music-models](api-references/music-models/)
 {% endcontent-ref %}
 
