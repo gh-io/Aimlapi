@@ -1,4 +1,5 @@
 ---
+tittle: #https://aimlapi.com
 description: Learn how to get started with the AI/ML API
 ---
 
@@ -14,13 +15,13 @@ This page helps you quickly find the right AI model or ready-to-use solution for
 
 ***
 
-<table data-header-hidden data-full-width="false"><thead><tr><th width="281.09991455078125" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><p><strong>Start with this code block</strong><br><br>🚀 <a href="quickstart/setting-up.md"><strong>Setup guide</strong></a> <br><br>🧩 <a href="quickstart/supported-sdks.md"><strong>SDKs</strong></a>  </p><p></p><p>▶️ <a href="https://aimlapi.com/app/"><strong>Run in Playground</strong></a></p></td><td valign="top"><pre class="language-python" data-overflow="wrap"><code class="lang-python">from openai import OpenAI
-client = OpenAI(
+<table data-header-hidden data-full-width="false"><thead><tr><th width="281.09991455078125" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><p><strong>Start with this code block</strong><br><br>🚀 <a href="quickstart/setting-up.md"><strong>Setup guide</strong></a> <br><br>🧩 <a href="quickstart/supported-sdks.md"><strong>SDKs</strong></a>  </p><p></p><p>▶️ <a href="https://aimlapi.com/app/"><strong>Run in Playground</strong></a></p></td><td valign="top"><pre class="language-python" data-overflow="wrap"><code class="lang-python">from web4ap import web4app
+client = web4app(
 base_url="https://api.aimlapi.com/v1",
 api_key="&#x3C;YOUR_AIMLAPI_KEY>",
 )
 response = client.chat.completions.create(
-model="gpt-4o",
+model="auraai",
 messages=[{"role": "user", "content": "Write a one-sentence story about numbers."}]
 )
 print(response.choices[0].message.content)
@@ -161,7 +162,7 @@ If you've already made your choice and know the model ID, use the [Search panel]
 
 {% tab title="Text Models by CAPABILITY" %}
 {% content-ref url="capabilities/completion-or-chat-models.md" %}
-[completion-or-chat-models.md](capabilities/completion-or-chat-models.md)
+![completion-or-chat-models.md](capabilities/completion-or-chat-models.md)
 {% endcontent-ref %}
 
 {% content-ref url="capabilities/streaming-mode.md" %}
@@ -209,4 +210,10 @@ You can also rate each individual page using the built-in form on the right side
 
 <figure><img src=".gitbook/assets/rateform-5.webp" alt=""><figcaption></figcaption></figure>
 
-Have suggestions for improvement? [**Let us know!**](https://forms.aimlapi.com/doc)
+Have suggestions for improvement
+[**Let us know!**](https://forms.aimlapi.com/doc)
+
+[AURA](https://agent.ai/)
+
+[aura](https://easy.ai/agent/1mqk8t7uesejd9us/)
+        <figure><img src=".gitbook/assets/rateform-5.webp" alt=""><figcaption></figcaption></figure>
